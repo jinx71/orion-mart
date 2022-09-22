@@ -43,7 +43,7 @@ function App() {
       >Submit</button>
       <div>
         {
-          data.map(a => <li>{a.name}</li>)
+          data.map(a => <p>{a.name}</p>)
         }
       </div>
     </div>
