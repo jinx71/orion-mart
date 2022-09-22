@@ -7,11 +7,11 @@ function App() {
   const [age, setAge] = useState([]);
   const [data, setData] = useState([]);
   const addFriend = () => {
-    Axios.post("http://localhost:3001/addfriend", { name: name, age: parseInt(age) })
+    Axios.post("https://orion-mart-server.herokuapp.com/addfriend", { name: name, age: parseInt(age) })
   }
   useEffect(() => {
 
-    Axios.get('http://localhost:3001/read')
+    Axios.get('https://orion-mart-server.herokuapp.com/read')
       .then(res => setData(res.data))
   }, [])
   return (
